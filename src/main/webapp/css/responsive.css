@@ -1,0 +1,41 @@
+/* Responsive Design */
+
+@media (max-width: 991.98px) {
+    /* Ajustes para tablets */
+    .pro-card {
+        padding: 1.5rem;
+    }
+    
+    .eval-layout .row {
+        flex-direction: column-reverse;
+    }
+    
+    /* El sidebar pasa arriba de las preguntas en mobile/tablet si es necesario, 
+       o se puede hacer un offcanvas. Mantendremos flex-direction-reverse para que 
+       las preguntas estén primero en lectura móvil, o normal según diseño vertical. */
+}
+
+@media (max-width: 767.98px) {
+    /* Ajustes para móviles */
+    .timer-container {
+        font-size: 1rem;
+        padding: 0.4rem 1rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-primary-custom, .btn-secondary-custom {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .question-nav-grid {
+        grid-template-columns: repeat(auto-fill, minmax(35px, 1fr));
+    }
+}

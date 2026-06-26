@@ -1,0 +1,8 @@
+{
+    "id": 1,
+    "codigo": "TR-FORMA-B",
+    "nombre": "Test de Razonamiento Forma B",
+    "descripcion": "Evaluación oficial para medir capacidades de razonamiento abstracto, numérico y verbal.",
+    "duracionMinutos": 12,
+    "estado": "ACTIVO"
+}

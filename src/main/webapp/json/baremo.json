@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "pruebaId": 1,
+        "puntuacionDirecta": 0,
+        "percentil": 1,
+        "eneatipo": 1,
+        "nivel": "Bajo"
+    },
+    {
+        "id": 2,
+        "pruebaId": 1,
+        "puntuacionDirecta": 1,
+        "percentil": 10,
+        "eneatipo": 2,
+        "nivel": "Bajo"
+    },
+    {
+        "id": 3,
+        "pruebaId": 1,
+        "puntuacionDirecta": 2,
+        "percentil": 50,
+        "eneatipo": 5,
+        "nivel": "Promedio"
+    },
+    {
+        "id": 4,
+        "pruebaId": 1,
+        "puntuacionDirecta": 3,
+        "percentil": 99,
+        "eneatipo": 9,
+        "nivel": "Alto"
+    }
+]

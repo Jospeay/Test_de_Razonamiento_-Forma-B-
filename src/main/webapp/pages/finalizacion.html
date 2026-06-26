@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Finalizada</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/animations.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column min-vh-100 justify-content-center align-items-center bg-light">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6 text-center">
+                <div class="pro-card fade-in py-5">
+                    
+                    <div class="mb-4">
+                        <i class="bi bi-check-circle-fill" style="font-size: 5rem; color: var(--success-color);"></i>
+                    </div>
+
+                    <h2 class="mb-3 text-primary-custom" style="font-family: 'Poppins', sans-serif;">La evaluación ha finalizado</h2>
+                    
+                    <p class="text-muted fs-5 mb-5">
+                        Gracias por participar en el Test de Razonamiento Forma B. Sus respuestas han sido guardadas exitosamente y enviadas para su calificación.
+                    </p>
+
+                    <!-- Se limpia el localStorage para evitar que entre nuevamente -->
+                    <script>
+                        localStorage.removeItem('eval_inicio');
+                        localStorage.removeItem('sesionActual');
+                        // Se podría limpiar el aspirante también, dependiendo del flujo
+                    </script>
+
+                    <p class="text-muted small">Puede cerrar esta ventana con seguridad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

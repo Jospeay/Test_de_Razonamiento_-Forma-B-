@@ -1,0 +1,15 @@
+{
+    "id": 1,
+    "codigo": "ASP-2023-001",
+    "nombreCompleto": "Juan Pérez",
+    "cedula": "123456789",
+    "edad": 18,
+    "sexo": "M",
+    "departamento": "Managua",
+    "municipio": "Managua",
+    "zona": "Urbana",
+    "tipoColegio": "Público",
+    "correo": "juan.perez@example.com",
+    "telefono": "8888-8888",
+    "fechaRegistro": "2023-10-25T10:00:00Z"
+}

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Razonamiento Forma B | Universidad Americana</title>
+    <meta name="description" content="Test de Razonamiento Forma B — Facultad de Ciencias Médicas, Universidad Americana (UAM), Nicaragua.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════
+     CABECERA INSTITUCIONAL FIJA
+════════════════════════════════════════════════════════ -->
+<header class="inst-header">
+    <div class="inst-header-inner">
+        <!-- Logo UAM -->
+        <div class="uam-logo-wrap">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="uam-svg" aria-label="Universidad Americana">
+                <!-- Círculo exterior -->
+                <circle cx="100" cy="100" r="96" fill="#fff" stroke="#009B8E" stroke-width="6"/>
+                <!-- Fondo interno -->
+                <circle cx="100" cy="100" r="84" fill="#009B8E"/>
+                <!-- Escudo -->
+                <path d="M100,30 L140,52 L140,110 Q140,148 100,168 Q60,148 60,110 L60,52 Z"
+                      fill="#fff" opacity="0.18"/>
+                <!-- Mapa simplificado de América -->
+                <g fill="#fff" opacity="0.85">
+                    <!-- América del Norte -->
+                    <ellipse cx="88" cy="78" rx="18" ry="22" transform="rotate(-8,88,78)"/>
+                    <!-- América Central -->
+                    <ellipse cx="96" cy="104" rx="7" ry="12" transform="rotate(10,96,104)"/>
+                    <!-- América del Sur -->
+                    <ellipse cx="105" cy="130" rx="14" ry="20" transform="rotate(-5,105,130)"/>
+                </g>
+                <!-- Texto UNIVERSIDAD AMERICANA (arco superior) -->
+                <path id="arcTop" d="M22,100 A78,78 0 0,1 178,100" fill="none"/>
+                <text font-family="Outfit,sans-serif" font-size="12" font-weight="700" fill="#fff" letter-spacing="1.5">
+                    <textPath href="#arcTop" startOffset="8%">UNIVERSIDAD AMERICANA</textPath>
+                </text>
+                <!-- Texto EXCELLENTIA ACADEMICA (arco inferior) -->
+                <path id="arcBot" d="M30,108 A72,72 0 0,0 170,108" fill="none"/>
+                <text font-family="Outfit,sans-serif" font-size="10" font-weight="600" fill="#E8F7F6" letter-spacing="1">
+                    <textPath href="#arcBot" startOffset="12%">EXCELLENTIA ACADEMICA</textPath>
+                </text>
+                <!-- Estrellitas decorativas -->
+                <circle cx="100" cy="24"  r="3" fill="#fff" opacity="0.7"/>
+                <circle cx="60"  cy="36"  r="2" fill="#fff" opacity="0.5"/>
+                <circle cx="140" cy="36"  r="2" fill="#fff" opacity="0.5"/>
+            </svg>
+        </div>
+
+        <!-- Títulos institucionales -->
+        <div class="inst-titles">
+            <div class="inst-name">Universidad Americana</div>
+            <div class="inst-faculty">Facultad de Ciencias Médicas</div>
+            <div class="inst-test-label">Test de Razonamiento — Forma B</div>
+        </div>
+
+        <!-- Indicador de pantalla (oculto durante instrucciones) -->
+        <div class="screen-badge" id="screen-badge" style="display:none;">
+            <span id="screen-badge-text">Registro</span>
+        </div>
+    </div>
+</header>
+
+<!-- ════════════════════════════════════════════════════════
+     CONTENEDOR PRINCIPAL
+════════════════════════════════════════════════════════ -->
+<main class="main-wrap">
+
+    <!-- ─────────────────────────────────────────────────
+         PANTALLA 1: INSTRUCCIONES
+    ───────────────────────────────────────────────── -->
+    <section id="screen-instructions" class="screen active">
+
+        <div class="section-header teal">
+            <div class="section-icon">📋</div>
+            <h1>Instrucciones Generales</h1>
+            <p>Lea con atención antes de comenzar la evaluación.</p>
+        </div>
+
+        <div class="v-card">
+            <p class="intro-text">
+                En las páginas siguientes encontrará diversos ejercicios lógicos. Cada uno presenta
+                una serie incompleta con cuatro posibles respuestas marcadas con
+                <strong>A, B, C y D</strong>. Su tarea consiste en identificar cuál completa
+                lógicamente la serie.
+            </p>
+
+            <div class="alert-strip warning">
+                <span class="alert-ico">⏱</span>
+                <div>
+                    <strong>Tiempo límite: 12 minutos exactos.</strong>
+                    <p>Si se detiene en un ejercicio, puede dejarlo en blanco y avanzar al siguiente para regresar después.</p>
+                </div>
+            </div>
+
+            <h3 class="v-section-title">Normas del Test</h3>
+            <div class="rules-list">
+                <div class="rule-row"><span class="rule-dot teal"></span>No está permitido el uso de calculadoras ni material de apoyo.</div>
+                <div class="rule-row"><span class="rule-dot teal"></span>El sistema detecta cambios de pestaña o ventana.</div>
+                <div class="rule-row"><span class="rule-dot teal"></span>Las respuestas se guardan automáticamente en tiempo real.</div>
+                <div class="rule-row"><span class="rule-dot teal"></span>Puede navegar libremente entre preguntas durante el examen.</div>
+                <div class="rule-row"><span class="rule-dot terra"></span>Sus datos son confidenciales y de uso exclusivo institucional.</div>
+            </div>
+
+            <h3 class="v-section-title" style="margin-top:32px;">Ejemplos de Práctica</h3>
+            <p class="hint-text">Estos ejemplos son orientativos — no forman parte del puntaje.</p>
+
+            <div class="examples-column">
+
+                <div class="example-block">
+                    <div class="example-num">Ejemplo 23 — Series de Letras</div>
+                    <div class="example-q">A &mdash; C &mdash; E &mdash; <span class="blank">?</span></div>
+                    <div class="example-opts">
+                        <span class="eopt">A: H</span>
+                        <span class="eopt correct">B: I ✓</span>
+                        <span class="eopt">C: F</span>
+                        <span class="eopt">D: J</span>
+                    </div>
+                    <p class="example-exp">Las letras saltan de dos en dos: A, C, E → la siguiente es <strong>G</strong>, pero la letra con salto +4 desde E es <strong>I</strong> (E+4=I).</p>
+                </div>
+
+                <div class="example-block">
+                    <div class="example-num">Ejemplo 24 — Analogías Verbales</div>
+                    <div class="example-q">METAL es a MINERAL como PLANTA es a <span class="blank">?</span></div>
+                    <div class="example-opts">
+                        <span class="eopt">A: NATURALEZA</span>
+                        <span class="eopt">B: AGRICULTURA</span>
+                        <span class="eopt correct">C: VEGETAL ✓</span>
+                        <span class="eopt">D: HORTALIZA</span>
+                    </div>
+                    <p class="example-exp">El metal pertenece al reino mineral; la planta pertenece al reino <strong>vegetal</strong>.</p>
+                </div>
+
+                <div class="example-block">
+                    <div class="example-num">Ejemplo 25 — Series Numéricas</div>
+                    <div class="example-q">123 &mdash; 234 &mdash; 345 &mdash; <span class="blank">?</span></div>
+                    <div class="example-opts">
+                        <span class="eopt">A: 567</span>
+                        <span class="eopt">B: 354</span>
+                        <span class="eopt">C: 465</span>
+                        <span class="eopt correct">D: 456 ✓</span>
+                    </div>
+                    <p class="example-exp">Cada número aumenta +111: 123+111=234, 234+111=345, 345+111=<strong>456</strong>.</p>
+                </div>
+
+            </div><!-- /examples-column -->
+
+            <div class="btn-zone">
+                <button id="btn-to-register" class="btn btn-teal btn-lg">
+                    Continuar al Registro
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+
+    </section><!-- /screen-instructions -->
+
+
+    <!-- ─────────────────────────────────────────────────
+         PANTALLA 2: REGISTRO
+    ───────────────────────────────────────────────── -->
+    <section id="screen-register" class="screen">
+
+        <div class="section-header terra">
+            <div class="section-icon">👤</div>
+            <h1>Registro del Aspirante</h1>
+            <p>Complete todos los campos marcados con <strong>*</strong> para iniciar la evaluación.</p>
+        </div>
+
+        <form id="form-registration" class="v-card" autocomplete="off">
+
+            <h3 class="v-section-title">Identificación Personal</h3>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="reg-cedula">Número de Cédula <span class="req">*</span></label>
+                    <input type="text" id="reg-cedula" placeholder="Ej: 001-250600-1002A" required>
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="reg-nombre">Nombre Completo <span class="req">*</span></label>
+                    <input type="text" id="reg-nombre" placeholder="Ej: Juan Carlos Pérez López" required>
+                </div>
+            </div>
+
+            <div class="field-row two-col">
+                <div class="field-group">
+                    <label for="reg-edad">Edad <span class="req">*</span></label>
+                    <input type="number" id="reg-edad" min="14" max="100" placeholder="Ej: 21" required>
+                </div>
+                <div class="field-group">
+                    <label for="reg-sexo">Sexo <span class="req">*</span></label>
+                    <select id="reg-sexo" required>
+                        <option value="">Seleccione...</option>
+                        <option value="MASCULINO">Masculino</option>
+                        <option value="FEMENINO">Femenino</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3 class="v-section-title">Procedencia</h3>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="reg-depto">Departamento <span class="req">*</span></label>
+                    <select id="reg-depto" required>
+                        <option value="">Cargando departamentos...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-group">
+                    <label for="reg-muni">Municipio <span class="req">*</span></label>
+                    <input type="text" id="reg-muni" placeholder="Ej: Managua" required>
+                </div>
+            </div>
+
+            <div class="field-row two-col">
+                <div class="field-group">
+                    <label for="reg-zona">Zona <span class="req">*</span></label>
+                    <select id="reg-zona" required>
+                        <option value="">Seleccione...</option>
+                        <option value="URBANA">Urbana</option>
+                        <option value="RURAL">Rural</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label for="reg-colegio">Tipo de Colegio <span class="req">*</span></label>
+                    <select id="reg-colegio" required>
+                        <option value="">Seleccione...</option>
+                        <option value="PUBLICO">Público</option>
+                        <option value="PRIVADO">Privado</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3 class="v-section-title">Contacto <span class="opt-label">(Opcional)</span></h3>
+
+            <div class="field-row two-col">
+                <div class="field-group">
+                    <label for="reg-correo">Correo Electrónico</label>
+                    <input type="email" id="reg-correo" placeholder="correo@email.com">
+                </div>
+                <div class="field-group">
+                    <label for="reg-telefono">Teléfono / Celular</label>
+                    <input type="text" id="reg-telefono" placeholder="8888-8888">
+                </div>
+            </div>
+
+            <div id="register-error" class="error-msg" role="alert" aria-live="polite"></div>
+
+            <div class="btn-zone">
+                <button type="submit" id="btn-start-exam-trigger" class="btn btn-terra btn-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <span>Iniciar Evaluación</span>
+                </button>
+            </div>
+
+        </form>
+
+    </section><!-- /screen-register -->
+
+
+    <!-- ─────────────────────────────────────────────────
+         PANTALLA 3: EXAMEN (layout VERTICAL)
+    ───────────────────────────────────────────────── -->
+    <section id="screen-exam" class="screen">
+
+        <!-- Barra de estado -->
+        <div class="exam-statusbar" id="exam-topbar">
+            <div class="status-left">
+                <span class="progress-label">Progreso</span>
+                <div class="progress-bar-track">
+                    <div class="progress-bar-fill" id="progress-bar-fill-el"></div>
+                </div>
+                <span class="progress-num" id="progress-indicator">1 / 30</span>
+            </div>
+            <div class="timer-pill" id="timer-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span id="timer-display">12:00</span>
+            </div>
+        </div>
+
+        <!-- Tarjeta de pregunta -->
+        <div class="v-card exam-card" id="question-card">
+            <div class="q-meta-row">
+                <span class="q-badge num" id="question-index-tag">Pregunta #1</span>
+                <span class="q-badge cat" id="question-category-tag">—</span>
+                <span class="q-badge diff" id="question-difficulty-tag">—</span>
+            </div>
+
+            <!-- Enunciado -->
+            <div class="q-statement" id="question-text">Cargando pregunta...</div>
+
+            <!-- Opciones — generadas dinámicamente por app.js desde la API -->
+            <div class="opts-column" id="options-group" role="radiogroup" aria-label="Opciones de respuesta"></div>
+
+            <!-- Botón limpiar -->
+            <div class="q-footer">
+                <button class="btn btn-ghost btn-sm" id="btn-clear-answer" style="display:none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/></svg>
+                    Limpiar selección
+                </button>
+            </div>
+        </div>
+
+        <!-- Navegación Anterior / Siguiente -->
+        <div class="nav-row">
+            <button class="btn btn-outline" id="btn-prev-question">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                Anterior
+            </button>
+            <button class="btn btn-outline" id="btn-next-question">
+                Siguiente
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+        </div>
+
+        <!-- Mapa de preguntas (vertical, debajo de la pregunta) -->
+        <div class="v-card nav-map-card">
+            <h3 class="map-title">Mapa de Preguntas</h3>
+            <p class="hint-text">Clic en un número para navegar directamente a esa pregunta.</p>
+            <div class="q-grid" id="questions-grid-container">
+                <!-- Generado por app.js -->
+            </div>
+            <div class="map-legend">
+                <span class="leg-item"><span class="leg-dot answered"></span> Respondida</span>
+                <span class="leg-item"><span class="leg-dot current"></span> Actual</span>
+                <span class="leg-item"><span class="leg-dot"></span> Sin responder</span>
+            </div>
+        </div>
+
+        <!-- Zona de envío -->
+        <div class="submit-zone">
+            <div class="answered-stat" id="answered-count-display">0 de 30 respondidas</div>
+            <button class="btn btn-terra btn-lg full-w" id="btn-submit-exam">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><polyline points="20 6 9 17 4 12"/></svg>
+                Finalizar y Enviar Examen
+            </button>
+        </div>
+
+    </section><!-- /screen-exam -->
+
+
+    <!-- ─────────────────────────────────────────────────
+         PANTALLA 4: RESULTADO
+    ───────────────────────────────────────────────── -->
+    <section id="screen-finished" class="screen">
+
+        <div class="section-header teal">
+            <div class="check-anim">
+                <svg class="check-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                    <circle class="check-circle" cx="26" cy="26" r="25" fill="none"/>
+                    <path class="check-path" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                </svg>
+            </div>
+            <h1>¡Evaluación Completada!</h1>
+            <p>Sus respuestas han sido registradas exitosamente en el sistema.</p>
+        </div>
+
+        <div class="v-card" id="result-summary-box" style="display:none;">
+            <h3 class="v-section-title">Resumen de Resultados</h3>
+            <div class="results-grid">
+                <div class="res-stat teal-stat">
+                    <span class="res-num" id="res-correct">0</span>
+                    <span class="res-lbl">Respuestas<br>Correctas</span>
+                </div>
+                <div class="res-stat terra-stat">
+                    <span class="res-num" id="res-blank">0</span>
+                    <span class="res-lbl">Incorrectas /<br>En Blanco</span>
+                </div>
+                <div class="res-stat neutral-stat">
+                    <span class="res-num" id="res-percentil">—</span>
+                    <span class="res-lbl">Percentil<br>Normativo</span>
+                </div>
+            </div>
+            <div class="diagnostico-banner" id="res-diagnostico">Término medio</div>
+        </div>
+
+        <div class="v-card" style="text-align:center;">
+            <p style="color:#5a6a6e; margin-bottom:20px;">
+                El equipo de psicología/recursos humanos revisará sus resultados.<br>
+                Muchas gracias por participar.
+            </p>
+            <button class="btn btn-outline" onclick="location.reload()">Volver al Inicio</button>
+        </div>
+
+    </section><!-- /screen-finished -->
+
+</main><!-- /main-wrap -->
+
+<!-- Pie de página institucional -->
+<footer class="inst-footer">
+    <span>© 2025 Universidad Americana — Facultad de Ciencias Médicas | Test de Razonamiento Forma B</span>
+</footer>
+
+<!-- ═══════════════════════════════════════════════════════
+     MODAL ANTI-TRAMPA
+═══════════════════════════════════════════════════════ -->
+<div id="cheat-warning-modal" class="modal-overlay" style="display:none;" role="dialog" aria-modal="true" aria-labelledby="cheat-title">
+    <div class="modal-box">
+        <div class="modal-ico">⚠️</div>
+        <h2 id="cheat-title">¡ATENCIÓN!</h2>
+        <p>Ha salido de la ventana del examen. El test se enviará automáticamente en:</p>
+        <div class="countdown-circle">
+            <span id="cheat-countdown-val">15</span>
+            <small>seg</small>
+        </div>
+        <p class="hint-text">Regrese al examen para detener el contador.</p>
+    </div>
+</div>
+
+<!-- OVERLAY DE CARGA -->
+<div id="loading-overlay" class="loading-overlay" style="display:none;">
+    <div class="spinner-wrap">
+        <svg class="spin-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="100" cy="100" r="92" fill="none" stroke="#009B8E" stroke-width="8" stroke-dasharray="50 528" stroke-linecap="round"/>
+        </svg>
+        <div class="spin-logo-inner">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" width="60" height="60">
+                <circle cx="100" cy="100" r="96" fill="#009B8E"/>
+                <path d="M100,30 L140,52 L140,110 Q140,148 100,168 Q60,148 60,110 L60,52 Z" fill="#fff" opacity="0.2"/>
+                <ellipse cx="88" cy="78" rx="18" ry="22" transform="rotate(-8,88,78)" fill="#fff" opacity="0.8"/>
+                <ellipse cx="96" cy="104" rx="7" ry="12" transform="rotate(10,96,104)" fill="#fff" opacity="0.8"/>
+                <ellipse cx="105" cy="130" rx="14" ry="20" transform="rotate(-5,105,130)" fill="#fff" opacity="0.8"/>
+            </svg>
+        </div>
+    </div>
+    <p id="loading-message">Cargando...</p>
+</div>
+
+
+<!-- GUARD: evita que el blur falso del browser al cargar la página
+     active el modal anti-trampa antes de que el examen empiece.
+     Este script corre ANTES de app.js y parchea window.addEventListener
+     para ignorar blur/visibilitychange durante el primer segundo. -->
+<script>
+(function() {
+    // Marcar la página como recién cargada
+    window.__examReady = false;
+    window.__blurSuppressed = true;
+
+    // Levanta la supresión después de 1.2 segundos (tiempo suficiente para
+    // que el browser termine de disparar eventos de foco iniciales)
+    setTimeout(function() {
+        window.__blurSuppressed = false;
+    }, 1200);
+
+    // Parchar addEventListener ANTES de que app.js se ejecute
+    var _origAddEvt = window.addEventListener.bind(window);
+    window.addEventListener = function(type, handler, opts) {
+        if (type === 'blur' || type === 'focus') {
+            var guardedHandler = function(e) {
+                // Suprimir si aún estamos en el período de carga
+                // o si la pantalla de examen NO está activa
+                var examScreen = document.getElementById('screen-exam');
+                if (window.__blurSuppressed) return;
+                if (examScreen && !examScreen.classList.contains('active')) return;
+                handler.call(this, e);
+            };
+            return _origAddEvt(type, guardedHandler, opts);
+        }
+        return _origAddEvt(type, handler, opts);
+    };
+
+    // También parchar document.addEventListener para visibilitychange
+    var _origDocAddEvt = document.addEventListener.bind(document);
+    document.addEventListener = function(type, handler, opts) {
+        if (type === 'visibilitychange') {
+            var guardedHandler = function(e) {
+                var examScreen = document.getElementById('screen-exam');
+                if (window.__blurSuppressed) return;
+                if (examScreen && !examScreen.classList.contains('active')) return;
+                handler.call(this, e);
+            };
+            return _origDocAddEvt(type, guardedHandler, opts);
+        }
+        return _origDocAddEvt(type, handler, opts);
+    };
+
+    // Asegurar que el modal anti-trampa esté siempre oculto al inicio
+    document.addEventListener('DOMContentLoaded', function() {
+        var modal = document.getElementById('cheat-warning-modal');
+        if (modal) modal.style.display = 'none';
+    });
+})();
+</script>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1, "parteId": 1, "numero": 1, "tipoPregunta": "Serie incompleta", "nivel": "Fácil",
+        "enunciado": "Seleccione el número que completa la serie: 2, 4, 6, 8, __", "respuestaCorrectaId": 3
+    },
+    {
+        "id": 2, "parteId": 1, "numero": 2, "tipoPregunta": "Analogía", "nivel": "Medio",
+        "enunciado": "Blanco es a Negro como Día es a:", "respuestaCorrectaId": 6
+    },
+    {
+        "id": 3, "parteId": 1, "numero": 3, "tipoPregunta": "Serie Numérica", "nivel": "Difícil",
+        "enunciado": "Complete la serie: 1, 1, 2, 3, 5, 8, __", "respuestaCorrectaId": 11
+    },
+    {
+        "id": 4, "parteId": 1, "numero": 4, "tipoPregunta": "Razonamiento Lógico", "nivel": "Medio",
+        "enunciado": "Si todos los gatos tienen cola, y Félix es un gato, entonces:", "respuestaCorrectaId": 13
+    },
+    {
+        "id": 5, "parteId": 1, "numero": 5, "tipoPregunta": "Serie Alfabética", "nivel": "Fácil",
+        "enunciado": "A, C, E, G, __", "respuestaCorrectaId": 17
+    },
+    {
+        "id": 6, "parteId": 1, "numero": 6, "tipoPregunta": "Razonamiento Matemático", "nivel": "Difícil",
+        "enunciado": "Si el 20% de una cantidad es 40, ¿cuál es la cantidad?", "respuestaCorrectaId": 23
+    },
+    {
+        "id": 7, "parteId": 1, "numero": 7, "tipoPregunta": "Analogía", "nivel": "Medio",
+        "enunciado": "Pájaro es a Aire como Pez es a:", "respuestaCorrectaId": 26
+    },
+    {
+        "id": 8, "parteId": 1, "numero": 8, "tipoPregunta": "Razonamiento Verbal", "nivel": "Difícil",
+        "enunciado": "Seleccione el sinónimo de 'Efímero':", "respuestaCorrectaId": 29
+    },
+    {
+        "id": 9, "parteId": 1, "numero": 9, "tipoPregunta": "Serie Alfanumérica", "nivel": "Medio",
+        "enunciado": "1A, 2B, 3C, 4D, __", "respuestaCorrectaId": 36
+    },
+    {
+        "id": 10, "parteId": 1, "numero": 10, "tipoPregunta": "Razonamiento Lógico", "nivel": "Difícil",
+        "enunciado": "Juan es más alto que Pedro, y Pedro es más alto que Luis. ¿Quién es el más bajo?", "respuestaCorrectaId": 39
+    }
+]

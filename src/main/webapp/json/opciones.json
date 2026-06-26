@@ -1,0 +1,51 @@
+[
+    {"id": 1, "itemId": 1, "texto": "9", "orden": 1},
+    {"id": 2, "itemId": 1, "texto": "12", "orden": 2},
+    {"id": 3, "itemId": 1, "texto": "10", "orden": 3},
+    {"id": 4, "itemId": 1, "texto": "11", "orden": 4},
+    
+    {"id": 5, "itemId": 2, "texto": "Sol", "orden": 1},
+    {"id": 6, "itemId": 2, "texto": "Noche", "orden": 2},
+    {"id": 7, "itemId": 2, "texto": "Estrella", "orden": 3},
+    {"id": 8, "itemId": 2, "texto": "Luna", "orden": 4},
+
+    {"id": 9, "itemId": 3, "texto": "10", "orden": 1},
+    {"id": 10, "itemId": 3, "texto": "12", "orden": 2},
+    {"id": 11, "itemId": 3, "texto": "13", "orden": 3},
+    {"id": 12, "itemId": 3, "texto": "15", "orden": 4},
+
+    {"id": 13, "itemId": 4, "texto": "Félix tiene cola", "orden": 1},
+    {"id": 14, "itemId": 4, "texto": "Félix no tiene cola", "orden": 2},
+    {"id": 15, "itemId": 4, "texto": "Félix es un perro", "orden": 3},
+    {"id": 16, "itemId": 4, "texto": "Ninguna de las anteriores", "orden": 4},
+
+    {"id": 17, "itemId": 5, "texto": "I", "orden": 1},
+    {"id": 18, "itemId": 5, "texto": "H", "orden": 2},
+    {"id": 19, "itemId": 5, "texto": "J", "orden": 3},
+    {"id": 20, "itemId": 5, "texto": "K", "orden": 4},
+
+    {"id": 21, "itemId": 6, "texto": "100", "orden": 1},
+    {"id": 22, "itemId": 6, "texto": "150", "orden": 2},
+    {"id": 23, "itemId": 6, "texto": "200", "orden": 3},
+    {"id": 24, "itemId": 6, "texto": "80", "orden": 4},
+
+    {"id": 25, "itemId": 7, "texto": "Tierra", "orden": 1},
+    {"id": 26, "itemId": 7, "texto": "Agua", "orden": 2},
+    {"id": 27, "itemId": 7, "texto": "Nadar", "orden": 3},
+    {"id": 28, "itemId": 7, "texto": "Océano", "orden": 4},
+
+    {"id": 29, "itemId": 8, "texto": "Pasajero", "orden": 1},
+    {"id": 30, "itemId": 8, "texto": "Eterno", "orden": 2},
+    {"id": 31, "itemId": 8, "texto": "Brillante", "orden": 3},
+    {"id": 32, "itemId": 8, "texto": "Oscuro", "orden": 4},
+
+    {"id": 33, "itemId": 9, "texto": "5E", "orden": 1},
+    {"id": 34, "itemId": 9, "texto": "5C", "orden": 2},
+    {"id": 35, "itemId": 9, "texto": "6E", "orden": 3},
+    {"id": 36, "itemId": 9, "texto": "5E", "orden": 4}, 
+
+    {"id": 37, "itemId": 10, "texto": "Juan", "orden": 1},
+    {"id": 38, "itemId": 10, "texto": "Pedro", "orden": 2},
+    {"id": 39, "itemId": 10, "texto": "Luis", "orden": 3},
+    {"id": 40, "itemId": 10, "texto": "No se puede determinar", "orden": 4}
+]

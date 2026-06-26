@@ -1,0 +1,285 @@
+/* Variables de Color y Tipografía */
+:root {
+    --primary-color: #27496D; /* Azul oscuro */
+    --secondary-color: #17A2B8; /* Turquesa */
+    --bg-color: #F8F9FA; /* Gris claro muy limpio */
+    --text-color: #333333;
+    --white: #FFFFFF;
+    --border-color: #E0E0E0;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    
+    /* Fuentes */
+    --font-primary: 'Inter', 'Poppins', 'Roboto', sans-serif;
+    
+    /* Sombras y Bordes */
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --border-radius: 12px;
+    --border-radius-sm: 8px;
+    --border-radius-lg: 20px;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Tipografía */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Tarjetas Profesionales */
+.pro-card {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Botones Profesionales */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #1a324b;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(39, 73, 109, 0.3);
+}
+
+.btn-secondary-custom {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover {
+    background-color: #117a8b;
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(23, 162, 184, 0.3);
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Utilidades de Espaciado */
+.section-padding {
+    padding: 4rem 0;
+}
+
+/* Header/Nav (Si aplica) */
+.official-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+.official-header img {
+    height: 50px;
+}
+
+/* Formularios */
+.form-control-pro {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control-pro:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+    outline: none;
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Temporizador Fijo */
+.timer-container {
+    background-color: var(--white);
+    border: 2px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 0.5rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    box-shadow: var(--card-shadow);
+}
+.timer-container i {
+    color: var(--secondary-color);
+}
+.timer-warning {
+    border-color: var(--warning-color);
+    color: var(--warning-color);
+}
+.timer-danger {
+    border-color: var(--danger-color);
+    color: var(--danger-color);
+}
+
+/* Sidebar de Preguntas (Navegación) */
+.question-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.q-nav-btn {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+/* Estados de botones de navegación */
+.q-nav-btn.unanswered {
+    background-color: #e9ecef; /* Gris */
+    color: #495057;
+}
+
+.q-nav-btn.answered {
+    background-color: var(--primary-color); /* Azul */
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+.q-nav-btn.current {
+    background-color: var(--secondary-color); /* Turquesa */
+    color: var(--white);
+    border-color: var(--secondary-color);
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Opciones de Respuesta */
+.option-wrapper {
+    margin-bottom: 1rem;
+}
+
+.option-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--white);
+}
+
+.option-card:hover {
+    border-color: var(--secondary-color);
+    background-color: rgba(23, 162, 184, 0.05);
+}
+
+.option-card.selected {
+    border-color: var(--primary-color);
+    background-color: rgba(39, 73, 109, 0.05);
+}
+
+.option-radio {
+    margin-right: 1rem;
+    transform: scale(1.2);
+    accent-color: var(--primary-color);
+}
+
+/* Layout de Evaluación Vertical */
+.eval-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.eval-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 1rem 0;
+}
+
+.eval-content-area {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* Ejemplos de Instrucciones */
+.example-card {
+    background-color: var(--white);
+    border-left: 5px solid var(--secondary-color);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+    box-shadow: var(--card-shadow);
+}
+.example-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+.example-explanation {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(23, 162, 184, 0.1);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+}
+
+/* Utilities */
+.text-primary-custom { color: var(--primary-color); }
+.text-secondary-custom { color: var(--secondary-color); }
+.bg-primary-custom { background-color: var(--primary-color); }
+.bg-secondary-custom { background-color: var(--secondary-color); }
