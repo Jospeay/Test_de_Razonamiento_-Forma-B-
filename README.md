@@ -163,4 +163,4 @@ Para mantener un historial de commits limpio y simular un flujo de trabajo real 
   - `feature/openxava-views` (Zahid)
 
 ---
-*Este proyecto es para fines estrictamente académicos como parte de la evaluación final del curso de Programación Web Avanzada en la UAM.*
+*Este proyecto es para fines estrictamente académicos como parte de la evaluación final del curso de Programación Orientada a Objetos en la UAM.*
