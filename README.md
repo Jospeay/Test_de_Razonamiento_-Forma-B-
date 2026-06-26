@@ -14,7 +14,7 @@ El sistema está desarrollado sobre **OpenXava** y **Java Persistence API (JPA)*
 | :--- | :--- | :--- | :--- |
 | **Lesther Galeano** | [@Jospeay](https://github.com/Jospeay) | **Líder de Proyecto / Integración** | Coordinación, diseño de la API Servlet (`ExamenServlet`), integración de CORS y conexión frontend-backend. |
 | **Gabriel Orozco** | [@gabrielorozcob](https://github.com/gabrielorozcob) | **DBA & Administrador de Datos** | Diseño del modelo físico/entidades JPA, persistencia de datos con Hibernate y scripts de inicialización SQL (`DbInitializerListener`). |
-| **Donald Mercado** | [@JayWFx](https://github.com/JayWFx) | **Desarrollador Backend API** | Implementación del controlador de flujo de examen, lógica de cálculo de puntajes percentiles, y endpoints REST. |
+| **Donald Hernández** | [@JayWFx](https://github.com/JayWFx) | **Desarrollador Backend API** | Implementación del controlador de flujo de examen, lógica de cálculo de puntajes percentiles, y endpoints REST. |
 | **Zahid Reyes** | [@rzahidb](https://github.com/rzahidb) | **Desarrollador OpenXava / UI** | Definición y maquetación de las vistas en OpenXava, configuración de relaciones complejas JPA (`BaremoNormativo`, `ParteRazonamiento`). |
 
 ---
